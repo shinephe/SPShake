@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GJH-oR-pTS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SHAKE-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SPMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7K-aa-KGK">
+                                <rect key="frame" x="163" y="318" width="48" height="30"/>
+                                <state key="normal" title="ENTER">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wvr-Ve-hRz" kind="push" id="ueP-Ko-joL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="摇一摇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Vg-tm-zvo">
+                                <rect key="frame" x="150" y="159" width="76" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N7K-aa-KGK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jb9-qc-cAE"/>
+                            <constraint firstItem="N7K-aa-KGK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N6I-4D-bBZ"/>
+                            <constraint firstItem="9Vg-tm-zvo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nms-j6-Ry1"/>
+                            <constraint firstItem="9Vg-tm-zvo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="95" id="SrY-AU-XFh"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="SHAKE" id="fCa-dU-t7B"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="762" y="-45"/>
+        </scene>
+        <!--摇一摇-->
+        <scene sceneID="ds5-Ll-Nay">
+            <objects>
+                <viewController id="wvr-Ve-hRz" customClass="SPShakeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wQS-gT-Sbs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rx3-r9-2C1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cTK-Jt-tde">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sp_shake_background" translatesAutoresizingMaskIntoConstraints="NO" id="WuV-pl-cjo">
+                                <rect key="frame" x="0.0" y="173.5" width="375" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WuV-pl-cjo" secondAttribute="height" multiplier="75:64" id="EH2-fT-jhh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WuV-pl-cjo" firstAttribute="leading" secondItem="cTK-Jt-tde" secondAttribute="leading" id="5Nl-Yj-DOn"/>
+                            <constraint firstAttribute="trailing" secondItem="WuV-pl-cjo" secondAttribute="trailing" id="ZM6-an-Eq6"/>
+                            <constraint firstItem="WuV-pl-cjo" firstAttribute="centerX" secondItem="cTK-Jt-tde" secondAttribute="centerX" id="aSf-nE-sQV"/>
+                            <constraint firstItem="WuV-pl-cjo" firstAttribute="centerY" secondItem="cTK-Jt-tde" secondAttribute="centerY" id="s6b-kb-XgR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="摇一摇" id="4Ru-9r-cBP"/>
+                    <connections>
+                        <outlet property="shakeBackgroundImageView" destination="WuV-pl-cjo" id="mJD-16-uyy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzs-0p-seY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1549.5999999999999" y="-33.733133433283363"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mwz-9v-RPg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GJH-oR-pTS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OV5-nx-KQG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qe3-Wm-HkQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ru5-Tb-7LR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="-44"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sp_shake_background" width="320" height="320"/>
+    </resources>
 </document>

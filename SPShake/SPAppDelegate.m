@@ -6,17 +6,20 @@
 //  Copyright © 2017年 shinephe. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SPAppDelegate.h"
 
-@interface AppDelegate ()
+@interface SPAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation SPAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIApplication.sharedApplication.applicationSupportsShakeToEdit = YES;
+
     return YES;
 }
 

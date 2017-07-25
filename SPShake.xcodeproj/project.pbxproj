@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		EF7938931F20A46500A89960 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7938921F20A46500A89960 /* main.m */; };
-		EF7938961F20A46500A89960 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7938951F20A46500A89960 /* AppDelegate.m */; };
-		EF7938991F20A46500A89960 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7938981F20A46500A89960 /* ViewController.m */; };
+		EF7938961F20A46500A89960 /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7938951F20A46500A89960 /* SPAppDelegate.m */; };
 		EF79389C1F20A46500A89960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF79389A1F20A46500A89960 /* Main.storyboard */; };
 		EF79389E1F20A46500A89960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF79389D1F20A46500A89960 /* Assets.xcassets */; };
 		EF7938A11F20A46500A89960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF79389F1F20A46500A89960 /* LaunchScreen.storyboard */; };
 		EF7938AC1F20A46500A89960 /* SPShakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7938AB1F20A46500A89960 /* SPShakeTests.m */; };
 		EF7938B71F20A46500A89960 /* SPShakeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7938B61F20A46500A89960 /* SPShakeUITests.m */; };
+		EF7938C61F20A58000A89960 /* SPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7938C51F20A58000A89960 /* SPMainViewController.m */; };
+		EF7938C81F20AD8600A89960 /* sp_shake_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF7938C71F20AD8600A89960 /* sp_shake_music.mp3 */; };
+		EF7938CC1F20AE1300A89960 /* SPShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7938CB1F20AE1300A89960 /* SPShakeViewController.m */; };
+		EFC2E65A1F21A32D00EBE938 /* SPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC2E6591F21A32D00EBE938 /* SPTools.m */; };
+		EFC2E65D1F21BA3200EBE938 /* UIView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC2E65C1F21BA3200EBE938 /* UIView+SPExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +41,8 @@
 /* Begin PBXFileReference section */
 		EF79388E1F20A46500A89960 /* SPShake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPShake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7938921F20A46500A89960 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EF7938941F20A46500A89960 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EF7938951F20A46500A89960 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EF7938971F20A46500A89960 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EF7938981F20A46500A89960 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF7938941F20A46500A89960 /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
+		EF7938951F20A46500A89960 /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
 		EF79389B1F20A46500A89960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF79389D1F20A46500A89960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF7938A01F20A46500A89960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,15 @@
 		EF7938B21F20A46500A89960 /* SPShakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPShakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7938B61F20A46500A89960 /* SPShakeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPShakeUITests.m; sourceTree = "<group>"; };
 		EF7938B81F20A46500A89960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7938C41F20A58000A89960 /* SPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMainViewController.h; sourceTree = "<group>"; };
+		EF7938C51F20A58000A89960 /* SPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMainViewController.m; sourceTree = "<group>"; };
+		EF7938C71F20AD8600A89960 /* sp_shake_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sp_shake_music.mp3; sourceTree = "<group>"; };
+		EF7938CA1F20AE1300A89960 /* SPShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPShakeViewController.h; sourceTree = "<group>"; };
+		EF7938CB1F20AE1300A89960 /* SPShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPShakeViewController.m; sourceTree = "<group>"; };
+		EFC2E6581F21A32D00EBE938 /* SPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTools.h; sourceTree = "<group>"; };
+		EFC2E6591F21A32D00EBE938 /* SPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTools.m; sourceTree = "<group>"; };
+		EFC2E65B1F21BA3200EBE938 /* UIView+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SPExtension.h"; sourceTree = "<group>"; };
+		EFC2E65C1F21BA3200EBE938 /* UIView+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SPExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +112,17 @@
 		EF7938901F20A46500A89960 /* SPShake */ = {
 			isa = PBXGroup;
 			children = (
-				EF7938941F20A46500A89960 /* AppDelegate.h */,
-				EF7938951F20A46500A89960 /* AppDelegate.m */,
-				EF7938971F20A46500A89960 /* ViewController.h */,
-				EF7938981F20A46500A89960 /* ViewController.m */,
+				EF7938941F20A46500A89960 /* SPAppDelegate.h */,
+				EF7938951F20A46500A89960 /* SPAppDelegate.m */,
+				EF7938C41F20A58000A89960 /* SPMainViewController.h */,
+				EF7938C51F20A58000A89960 /* SPMainViewController.m */,
+				EF7938CA1F20AE1300A89960 /* SPShakeViewController.h */,
+				EF7938CB1F20AE1300A89960 /* SPShakeViewController.m */,
+				EFC2E6581F21A32D00EBE938 /* SPTools.h */,
+				EFC2E6591F21A32D00EBE938 /* SPTools.m */,
+				EFC2E65B1F21BA3200EBE938 /* UIView+SPExtension.h */,
+				EFC2E65C1F21BA3200EBE938 /* UIView+SPExtension.m */,
+				EF7938C91F20AD8B00A89960 /* Resource */,
 				EF79389A1F20A46500A89960 /* Main.storyboard */,
 				EF79389D1F20A46500A89960 /* Assets.xcassets */,
 				EF79389F1F20A46500A89960 /* LaunchScreen.storyboard */,
@@ -138,6 +156,14 @@
 				EF7938B81F20A46500A89960 /* Info.plist */,
 			);
 			path = SPShakeUITests;
+			sourceTree = "<group>";
+		};
+		EF7938C91F20AD8B00A89960 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EF7938C71F20AD8600A89960 /* sp_shake_music.mp3 */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +228,13 @@
 		EF7938861F20A46500A89960 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SP;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = shinephe;
 				TargetAttributes = {
 					EF79388D1F20A46500A89960 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3FY64S6ECV;
 						ProvisioningStyle = Automatic;
 					};
 					EF7938A61F20A46500A89960 = {
@@ -248,6 +276,7 @@
 			files = (
 				EF7938A11F20A46500A89960 /* LaunchScreen.storyboard in Resources */,
 				EF79389E1F20A46500A89960 /* Assets.xcassets in Resources */,
+				EF7938C81F20AD8600A89960 /* sp_shake_music.mp3 in Resources */,
 				EF79389C1F20A46500A89960 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7938991F20A46500A89960 /* ViewController.m in Sources */,
-				EF7938961F20A46500A89960 /* AppDelegate.m in Sources */,
+				EF7938CC1F20AE1300A89960 /* SPShakeViewController.m in Sources */,
+				EF7938961F20A46500A89960 /* SPAppDelegate.m in Sources */,
 				EF7938931F20A46500A89960 /* main.m in Sources */,
+				EFC2E65D1F21BA3200EBE938 /* UIView+SPExtension.m in Sources */,
+				EFC2E65A1F21A32D00EBE938 /* SPTools.m in Sources */,
+				EF7938C61F20A58000A89960 /* SPMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +458,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3FY64S6ECV;
 				INFOPLIST_FILE = SPShake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shinephe.SPShake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -437,8 +472,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3FY64S6ECV;
 				INFOPLIST_FILE = SPShake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shinephe.SPShake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -509,6 +547,7 @@
 				EF7938BD1F20A46500A89960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF7938BE1F20A46500A89960 /* Build configuration list for PBXNativeTarget "SPShakeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +556,7 @@
 				EF7938C01F20A46500A89960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF7938C11F20A46500A89960 /* Build configuration list for PBXNativeTarget "SPShakeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +565,7 @@
 				EF7938C31F20A46500A89960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

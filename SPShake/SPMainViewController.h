@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SPMainViewController.h
 //  SPShake
 //
 //  Created by shinephe on 2017/7/20.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SPMainViewController : UIViewController
 
 @end
-
